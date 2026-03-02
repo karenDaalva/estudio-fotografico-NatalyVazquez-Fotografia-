@@ -40,3 +40,30 @@
 .read-the-docs {
   color: #888;
 }
+.inicio {
+  text-align: center;
+  padding: 40px;
+}
+
+.imagen-principal {
+  width: 80%;
+  max-width: 600px;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+.galeria {
+  text-align: center;
+  padding: 40px;
+}
+
+.contenedor-galeria {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.contenedor-galeria img {
+  width: 250px;
+  border-radius: 8px;
+}
