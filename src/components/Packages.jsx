@@ -39,7 +39,7 @@ function Packages() {
 
             <button 
                 className="quote-btn"
-                onClick={() => window.location.href="#contact"}
+                onClick={() => window.location.href="#contacto"}
             >
             Solicitar cotización
             </button>
