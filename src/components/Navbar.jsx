@@ -15,6 +15,13 @@ function Navbar() {
         <li><a href="#contacto">Contacto</a></li>
       </ul>
 
+      <button onClick={() => {
+        localStorage.removeItem("login");
+        window.location.href = "/";
+      }}>
+        Logout
+      </button>
+
     </nav>
   )
 }

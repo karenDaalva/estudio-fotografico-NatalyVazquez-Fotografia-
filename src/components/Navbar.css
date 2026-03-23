@@ -56,3 +56,14 @@
 .menu li{
   list-style:none;
 }
+
+@media (max-width:768px){
+  .navbar{
+    padding:0 20px;
+  }
+
+  .menu{
+    gap:10px;
+    font-size:12px;
+  }
+}

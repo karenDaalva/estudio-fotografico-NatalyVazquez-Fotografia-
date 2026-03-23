@@ -1,0 +1,84 @@
+.login-wrapper {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: linear-gradient(
+    rgba(0,0,0,0.7),
+    rgba(0,0,0,0.7)
+  ),
+  url('/images/foto1.jpg'); 
+
+  background-size: cover;
+  background-position: center;
+}
+
+/* CONTENEDOR */
+.login-container {
+  width: 350px;
+  padding: 40px;
+
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(10px);
+
+  border-radius: 12px;
+
+  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+
+  text-align: center;
+}
+
+/* TITULO */
+.login-container h2 {
+  color: white;
+  margin-bottom: 20px;
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+
+/* INPUTS */
+.login-container input {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+
+  border: 1px solid rgba(255,255,255,0.2);
+  border-radius: 6px;
+
+  background: rgba(255,255,255,0.1);
+  color: white;
+
+  outline: none;
+}
+
+.login-container input::placeholder {
+  color: rgba(255,255,255,0.6);
+}
+
+/* BOTON */
+.login-container button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 15px;
+
+  background: #fff;
+  color: #000;
+
+  border: none;
+  border-radius: 6px;
+
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.login-container button:hover {
+  background: #ddd;
+}
+
+@media (max-width:480px){
+  .login-container{
+    width: 90%;
+    padding: 30px;
+  }
+}
