@@ -82,3 +82,14 @@
     padding: 30px;
   }
 }
+
+.back-btn {
+  margin-top: 10px;
+  background: transparent;
+  color: #ccc;
+  border: 1px solid #555;
+}
+
+.back-btn:hover {
+  background: #222;
+}

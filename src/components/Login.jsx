@@ -15,8 +15,9 @@ const handleSubmit = (e) => {
   if (user === "admin" && password === "1234") {
     
     localStorage.setItem("login", "true"); 
+    window.dispatchEvent(new Event("storage"));
 
-    navigate("/home");
+    navigate("/admin");
 
   } else {
     alert("Datos incorrectos");
@@ -46,6 +47,13 @@ const handleSubmit = (e) => {
           />
 
           <button type="submit">Ingresar</button>
+
+          <button 
+            type="button"
+            className="back-btn"
+            onClick={() => navigate("/")}>
+            ← Volver al inicio
+          </button>
 
         </form>
 

@@ -101,3 +101,22 @@ img {
 html {
   scroll-behavior: smooth;
 }
+
+/* CONTENEDOR GENERAL */
+.container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 20px;
+}
+
+/* SECCIONES */
+section {
+  max-width: 1100px;
+  margin: auto;
+  padding: 80px 20px;
+}
+
+/* NAVBAR */
+.navbar {
+  padding: 0 20px;
+}
