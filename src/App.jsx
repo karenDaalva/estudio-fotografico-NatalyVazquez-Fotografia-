@@ -31,6 +31,9 @@ function Layout() {
           }
         />
 
+        {/* 404 */}
+        <Route path="*" element={<NotFound />} />
+
       </Routes>
     </>
   );
@@ -47,8 +50,6 @@ function App() {
         {/* LOGIN */}
         <Route path="/login" element={<Login />} />
 
-        {/* 404 */}
-        <Route path="*" element={<NotFound />} />
 
       </Routes>
     </BrowserRouter>
