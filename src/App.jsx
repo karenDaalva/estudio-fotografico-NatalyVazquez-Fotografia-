@@ -9,19 +9,24 @@ import Login from "./components/Login";
 import ProtectedRoute from "./components/ProtectedRoute";
 import Admin from "./components/Admin";
 import NotFound from "./components/NotFound";
+import Reservacion from "./components/Reservacion";
 
-/* Layout con navbar + contenido */
 function Layout() {
   return (
     <>
       <Navbar />
+
       <Routes>
         <Route path="/" element={<Inicio />} />
+
         <Route path="/galeria" element={<Galeria />} />
+
         <Route path="/paquetes" element={<Packages />} />
+
         <Route path="/contacto" element={<Contacto />} />
 
-        {/* ADMIN DENTRO DEL LAYOUT */}
+        <Route path="/reservacion" element={<Reservacion />} />
+
         <Route
           path="/admin"
           element={
@@ -31,9 +36,7 @@ function Layout() {
           }
         />
 
-        {/* 404 */}
         <Route path="*" element={<NotFound />} />
-
       </Routes>
     </>
   );
@@ -44,12 +47,9 @@ function App() {
     <BrowserRouter>
       <Routes>
 
-        {/* SITIO PRINCIPAL */}
         <Route path="/*" element={<Layout />} />
 
-        {/* LOGIN */}
         <Route path="/login" element={<Login />} />
-
 
       </Routes>
     </BrowserRouter>
