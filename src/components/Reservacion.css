@@ -1,0 +1,42 @@
+.reservacion-container {
+  max-width: 500px;
+  margin: auto;
+  padding: 40px;
+  text-align: center;
+}
+
+.reservacion-container h1 {
+  margin-bottom: 30px;
+}
+
+.reservacion-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.reservacion-form input,
+.reservacion-form select {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+.reservacion-form button {
+  padding: 12px;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.reservacion-form button:hover {
+  opacity: 0.8;
+}
+
+.mensaje {
+  margin-top: 20px;
+  font-weight: bold;
+}

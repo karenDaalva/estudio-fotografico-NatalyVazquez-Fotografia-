@@ -28,11 +28,14 @@ a:hover {
 
 body {
   margin: 0;
-  display: flex;
-  place-items: center;
   min-width: 320px;
-  min-height: 100vh;
-  
+  background-color: #111;
+  color: white;
+}
+
+h1, h2 {
+  font-weight: 300;
+  letter-spacing: 1px;
 }
 
 h1 {
@@ -71,8 +74,9 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
-section {
-  padding: 20px;
+
+section{
+  padding:120px 20px;
 }
 
 img {
@@ -92,4 +96,27 @@ img {
   form {
     width: 100%;
   }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* CONTENEDOR GENERAL */
+.container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 20px;
+}
+
+/* SECCIONES */
+section {
+  max-width: 1100px;
+  margin: auto;
+  padding: 80px 20px;
+}
+
+/* NAVBAR */
+.navbar {
+  padding: 0 20px;
 }

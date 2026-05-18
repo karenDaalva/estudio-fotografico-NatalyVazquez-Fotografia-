@@ -1,0 +1,11 @@
+.admin-container {
+  max-width: 1000px;
+  margin: 120px auto 40px auto; /* 🔥 espacio arriba */
+
+  padding: 30px;
+
+  background: rgba(255,255,255,0.05);
+  border-radius: 10px;
+
+  text-align: center;
+}

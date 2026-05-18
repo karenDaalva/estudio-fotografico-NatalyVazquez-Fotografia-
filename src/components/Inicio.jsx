@@ -1,13 +1,19 @@
 function Inicio() {
+    const baseUrl =
+    import.meta.env.MODE === "production"
+      ? "/estudio-fotografico-NatalyVazquez-Fotografia-"
+      : ""
+
   return (
-    <section className="inicio">
+    <section id="inicio" className="inicio">
       <h1>Nataly Vázquez Fotografía</h1>
       <p>Capturando momentos únicos e inolvidables.</p>
       <img 
-        src="/images/foto1.jpg" 
+        src={`${baseUrl}/images/foto1.jpg`}
         alt="Fotografía principal"
         className="imagen-principal"
       />
+      <a href="#galeria" className="btn-ver">Ver galería</a>
     </section>
   )
 }

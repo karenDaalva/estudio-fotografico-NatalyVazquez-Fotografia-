@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import './Contacto.css'
 
 function Contacto() {
   const [nombre, setNombre] = useState('')
@@ -18,8 +19,9 @@ function Contacto() {
   }
 
   return (
-    <section className="contacto">
+    <section id="contacto" className="contacto">
       <h2>Contacto</h2>
+
       <form onSubmit={manejarEnvio}>
         <input
           type="text"
@@ -27,11 +29,13 @@ function Contacto() {
           value={nombre}
           onChange={(e) => setNombre(e.target.value)}
         />
+
         <textarea
           placeholder="Tu mensaje"
           value={mensaje}
           onChange={(e) => setMensaje(e.target.value)}
         ></textarea>
+
         <button type="submit">Enviar</button>
       </form>
     </section>
